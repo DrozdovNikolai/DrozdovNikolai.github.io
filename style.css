@@ -40,8 +40,8 @@ header, footer{
 }
 #nav1 ul li{
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 nav a{
     text-decoration: none;
