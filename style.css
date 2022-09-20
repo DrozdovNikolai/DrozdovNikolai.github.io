@@ -29,16 +29,16 @@ header, footer{
     transform: scale(0.7);
 }
 
-nav{
+#nav1{
     clear:both;
     padding-bottom: 5px;
 }
-nav ul{
-    text-allign: center;
+#nav1 ul{
+    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
 }
-nav ul li{
+#nav1 ul li{
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
