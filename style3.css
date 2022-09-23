@@ -1,0 +1,109 @@
+html {
+    height: 100%
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+body{
+    margin:0px;
+    background:rgb(146, 170, 165);
+}
+header, footer{
+    background-color:rgb(102, 139, 131);
+    width: 100vw;
+    height: 120px;
+    margin-bottom: 10px;
+    
+}
+.container, .shapka, .podval, #nav1, .form, .table{
+    margin:0 auto;
+    background-color:rgb(122, 151, 145);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 100vw;
+}
+
+.shapka, .podval
+{
+    background-color:rgb(102, 139, 131); 
+    
+}
+
+
+#nav1{
+    clear:both;
+    padding-bottom: 5px;
+}
+#nav1 ul{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#nav1 ul li{
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+nav a{
+    text-decoration: none;
+}
+
+#logo{
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding-right: 10px;
+}
+table {
+    border-collapse: collapse;
+    border: 3px solid grey;
+    width: 600px;
+    text-align: center;
+    
+}
+td, th {
+    border: 1px solid grey;
+}
+
+tr.prime {
+    background: rgb(160, 172, 190);
+
+}
+
+tr.nprime {
+    background: rgb(126, 142, 167);
+
+}
+
+th {
+    background: rgb(157, 161, 182);
+}
+.table{
+    order:2;
+}
+.form{
+    order:1;
+}
+footer{
+    order: 3;
+    flex: 0;
+}
+@media screen and (min-device-width: 800px) {
+
+        .container, .shapka, .podval, #nav1, .form, .table{
+            max-width: 960px;
+        }
+        
+        .table{
+            order:1;
+        }
+        .form{
+            order:2;
+        }
+
+    }
+  

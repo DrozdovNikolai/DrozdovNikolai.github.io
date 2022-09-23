@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <title>Задание 3</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <div id="wrapper">
+  <header>
+    <div class="shapka">
+      <img src="catbird.jpg" alt="логотип" id="logo">
+      <h1>Дроздов Николай</h1>
+    </div>
+  </header>
+
+  <nav id="nav1">
+    <ul>
+      <li><a href="#maptest">тест map'а</a> &nbsp;</li>
+      <li><a href="#tb">таблица</a> &nbsp;</li>
+      <li><a href="#footer">подвал</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <ol>
+      <li><a href="http://example.com" id="rect">ссылка 1</a></li>
+      <li><a href="https://example.com">ссылка 2</a></li>
+      <li><a href="ftp://example.com/test.png">ссылка 3</a></li>
+      <li><a href="ftp://admin:admin@example.com/test.png">ссылка 4</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Bread#Properties">ссылка 5</a></li>
+      <li><a href="#checkbox">ссылка 6</a>
+      </li>
+      <li><a href="http://example.com?parametr1&parametr2">ссылка 7</a></li>
+      <li>
+        <nav>
+          <ul>
+            <li> <a href="#name" title="Форма имени"> ссылка 1</a></li>
+            <li> <a href="#email" title="Форма Email "> ссылка 2</a></li>
+            <li> <a href="#bio" title="Форма биографии"> ссылка 3</a> </li>
+          </ul>
+        </nav>
+      <li><a>ссылка 9</a></li>
+      <li><a href=""> ссылка 10</a></li>
+      <li><a href="https://example.com/" rel="nofollow"> ссылкa 11</a></li>
+      <!--noindex-->
+      <li><a href="https://example.com"> ссылкa 12</a></li>
+      <!--noindex-->
+      <li>
+        <p><a href="https://example.com">ссылка 13</a></p>
+      </li>
+      <li><a href="https://example.com"> <img src="Test.png" alt="Пример" width="200" height="200"> </a></li>
+      <li><img src="rect_circle.png" alt="Прямоугольник и круг" usemap="#Navigation" width="549" height="164"
+          id="maptest"></li>
+      <li><a href="about">ссылка 16</a></li>
+      <li><a href="about/1">ссылка 17</a></li>
+      <li><a href="../na_uroven_vishe"> ссылка 18 </a></li>
+      <li><a href="../../na_2urovnya_vishe"> ссылка 19 </a></li>
+      <li><a href="/">ссылка 20</a></li>
+      <li><a href="/about" id="circle">ссылка 21</a></li>
+    </ol>
+    <map name="Navigation">
+      <area shape="rect" coords="35,45,329,133" href="#rect" alt="Ссылка 15.1">
+      <area shape="circle" coords="440,90,53" href="#circle" alt="Ссылка 15.2">
+    </map>
+  </div>
+  <div class="table">
+    <table id="tb">
+      <caption>
+        <h3>Таблица</h3>
+      </caption>
+      <tbody>
+        <tr>
+          <th>колонка 1</th>
+          <th>колонка 2</th>
+          <th>колонка 3</th>
+        </tr>
+        <tr class="nprime">
+          <td>11</td>
+          <td>12</td>
+          <td>12</td>
+        </tr>
+        <tr class="prime">
+          <td colspan="3">21 22 23</td>
+        </tr>
+        <tr class="nprime">
+          <td>31</td>
+          <td colspan="2">32 33</td>
+        </tr>
+        <tr class="prime">
+          <td colspan="2">41 42</td>
+          <td>43</td>
+        </tr>
+        <tr class="nprime">
+          <td>51</td>
+          <td>52</td>
+          <td>53</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="form">
+    <form action="/" method="POST">
+      <label>
+        Имя:<br>
+        <input name="field-name-1" id="name" placeholder="Введите ваше имя">
+      </label><br>
+      <label>
+        E-mail:<br>
+        <input name="field-email" type="email" id="email" placeholder="Введите вашу почту">
+      </label><br>
+      <label>
+        Дата рождения:<br>
+        <input name="field-date" value="2022-09-05" type="date">
+      </label><br>
+      Пол:<br>
+      <label><input type="radio" name="radio-group-1" value="male">
+        Мужской</label>
+      <label><input type="radio" name="radio-group-1" value="female">
+        Женский</label><br>
+      Количество конечностей:<br>
+      <label><input type="radio" name="radio-group-2" value="2">
+        2</label>
+      <label><input type="radio" name="radio-group-2" value="4">
+        4</label><br>
+      <label>
+        Сверх способности:
+        <br>
+        <select name="field-name-2[]" multiple="multiple">
+          <option value="god">бессмертие</option>
+          <option value="noclip">прохождение сквозь стены</option>
+          <option value="sv_gravity">левитация</option>
+        </select>
+      </label>
+      <br>
+      <label>
+        Биография:<br>
+        <textarea name="field-name-3" id="bio"></textarea>
+      </label><br>
+      Чекбокс:<br>
+      <label><input type="checkbox" id="checkbox" name="check-1">
+        с контрактом ознакомлен (а) </label><br>
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
+
+  <footer>
+    <div class="podval" id="footer">
+      (с) Дроздов Николай 25 группа, 1 подгруппа<br>
+      задание 2
+    </div>
+  
+  </footer>
+</div>
+</body>
+
+
+</html>
