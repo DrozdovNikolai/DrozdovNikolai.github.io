@@ -14,6 +14,7 @@ body{
 header, footer{
     background-color:rgb(102, 139, 131);
     
+    
 }
 
 .container, .podval, #nav1, .form, .table{
@@ -21,7 +22,7 @@ header, footer{
     background-color:rgb(122, 151, 145);
     margin-bottom: 10px;
     width: 100vw;
-
+    padding: 4vw;
 
 }
 
@@ -35,6 +36,7 @@ header{
     margin-bottom: 10px;
 }
 
+
 #nav1{
     clear:both;
 
@@ -46,7 +48,7 @@ header{
 
 }
 #nav1 ul li{
-    /*margin-left: 10%;*/
+    
     margin-right: 10%;
     list-style-type: none;
     margin-bottom:1vw;
@@ -59,9 +61,7 @@ nav a{
     float: left;
     width: 100px;
     height: 100px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding: 0 1vw 0 1vw;
 }
 table {
     border-collapse: collapse;
@@ -111,8 +111,7 @@ footer{
         width: 100px;
         height: 100px;
         padding-right: 10px;
-        padding-left: 10px;
-        padding-bottom: 10px;
+
 
     }
   
