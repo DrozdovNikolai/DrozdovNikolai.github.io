@@ -6,7 +6,15 @@ html {
     flex-direction: column;
     flex-wrap: wrap;
 }
+#img1{
 
+    max-width: 100%;
+    height: auto;
+}
+#img2{
+    max-width: 100%;
+    height: auto;
+}
 body{
     margin:0px;
     background:rgb(146, 170, 165);
@@ -21,8 +29,9 @@ header, footer{
     margin:0 auto;
     background-color:rgb(122, 151, 145);
     margin-bottom: 10px;
-    width: 100vw;
-    padding: 4vw;
+    width: 96vw;
+
+    padding: 4vw 0 4vw 4vw;
 
 }
 
@@ -66,7 +75,7 @@ nav a{
 table {
     border-collapse: collapse;
     border: 3px solid grey;
-    width: 600px;
+    width: 10vw;
     text-align: center;
     
 }
@@ -139,6 +148,16 @@ footer{
         header, footer{
             height: 120px;
         }
-
+        #img1{
+            width:200px;
+            height:200px;
+        }
+        #img2{
+            width:549px;
+            height:164px;
+        }
+        #tb{
+            width: 600px;
+        }
     }
   
