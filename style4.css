@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+    font-size: 15px;
+}
+
+#img1{
+
+    max-width: 100%;
+    height: auto;
+}
+#maptest{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background:rgb(146, 170, 165);
+}
+.container-fluid, .col.b-header{
+    background-color:rgb(102, 139, 131);
+    
+    
+}
+
+.main, .podval, .nav1, .form, .table{
+    background-color:rgb(122, 151, 145);
+
+
+}
+
+.shapka, .podval
+{
+    background-color:rgb(102, 139, 131); 
+    
+}
+
+header{
+    margin-bottom: 10px;
+}
+
+
+#nav1{
+    clear:both;
+
+}
+
+#nav1 ul li{
+    
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+}
+
+.logo{
+    float: left;
+}
+table {
+    border-collapse: collapse;
+    border: 3px solid grey;
+    text-align: center;
+    
+}
+td, th {
+    border: 1px solid grey;
+}
+
+tr.prime {
+    background: rgb(160, 172, 190);
+
+}
+
+tr.nprime {
+    background: rgb(126, 142, 167);
+
+}
+
+th {
+    background: rgb(157, 161, 182);
+}
+.col {
+    background-color:rgb(122, 151, 145);
+}
+
+@media screen and (min-device-width: 800px) {
+
+    #nav1{
+        text-align: center;
+    }
+
+    .main, .row{
+        max-width: 960px;
+    }
+    .col, .shapka, .podval, .nav1, .form, .table, .f{
+        max-width: 960px;
+
+    }
+
+        .nav1 ul li{
+            display: inline-block;
+            margin-left: 10%;
+            margin-right: 10%;
+            list-style-type: disc;
+            margin-bottom:0vw;
+        }
+        header, footer{
+        }
+        #img1{
+            width:200px;
+            height:200px;
+        }
+        #img2{
+            width:549px;
+            height:164px;
+        }
+        #tb{
+            
+        }
+    }
+  
