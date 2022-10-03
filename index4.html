@@ -3,6 +3,7 @@
 <html lang="ru">
 
 <head>
+  <link rel="icon" type="image/x-icon" href="favicon.svg"> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Задание 4</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -11,23 +12,23 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-  <div class="col b-header mx-auto pb-5" >
-  
-      <img src="catbird.jpg" class="img-fluid logo" alt="логотип" >
-      <h1>Дроздов Николай</h1>
+    <header class="container-fluid pb-2 ">  
+  <div class="b-header mx-auto pb-5 mb-5 mb-md-0" >
+      <img src="catbird.jpg" class="img-fluid logo pr-5 " alt="логотип" >
+      <h1 class="h-h1">Дроздов Николай</h1>
+  </div>
     
   </header>
 <!--<div class="col py-3 mx-auto">-->
-  <nav class="col b-nav col-12 d-flex flex-row align-items-center mb-2 mx-auto ">
-    <ul>
-      <li-inline-block><a href="#maptest">тест map'а</a> &nbsp;</li>
-      <li-inline-block><a href="#tb">таблица</a> &nbsp;</li>
-      <li-inline-block><a href="#footer">подвал</a></li>
+  <nav class="col b-nav col-12 my-2 mx-auto pb-3 py-3 text-md-center">
+    <ul class="">
+      <li class="ul-li d-md-inline-block mx-5"><a href="#maptest" >тест map'а</a></li>
+      <li class="ul-li d-md-inline-block mx-5" ><a href="#tb">таблица</a></li>
+      <li class="ul-li d-md-inline-block mx-5"><a href="#footer">подвал</a></li>
     </ul>
   </nav>
 
-  <div class="main mx-auto mb-2">
+  <div class="col col-12 mx-auto mb-2 py-1">
     <ol>
       <li><a href="http://example.com" id="rect">ссылка 1</a></li>
       <li><a href="https://example.com">ссылка 2</a></li>
@@ -55,9 +56,9 @@
       <li>
         <p><a href="https://example.com">ссылка 13</a></p>
       </li>
-      <li><a href="https://example.com"> <img src="Test.png" alt="Пример"  id="img1"> </a></li>
+      <li><a href="https://example.com"> <img src="Test.png" alt="Пример"  class="img-fluid" id="img1"> </a></li>
       <li><img src="rect_circle.png" alt="Прямоугольник и круг" usemap="#Navigation"
-          id="maptest"></li>
+          id="maptest" class="img-fluid"></li>
       <li><a href="about">ссылка 16</a></li>
       <li><a href="about/1">ссылка 17</a></li>
       <li><a href="../na_uroven_vishe"> ссылка 18 </a></li>
@@ -71,7 +72,7 @@
     </map>
   </div>
   <div class="row mx-auto">
-  <div class="col col-12 order-2 order-md-1 mx-auto mb-2">
+  <div class="col col-12 order-2 order-md-1 mx-auto mb-2 py-1">
     <table id="tb">
       <caption>
         <h3>Таблица</h3>
@@ -107,7 +108,7 @@
     </table>
   </div>
 
-  <div class="col col-12 order-1 order-md-2 mx-auto mb-2">
+  <div class="col col-12 order-1 order-md-2 mx-auto mb-2 py-1">
     <form action="/" method="POST">
       <label>
         Имя:<br>

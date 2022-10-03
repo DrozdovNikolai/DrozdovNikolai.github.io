@@ -2,15 +2,9 @@ html {
     height: 100%;
     font-size: 15px;
 }
-
-#img1{
-
-    max-width: 100%;
-    height: auto;
-}
-#maptest{
-    max-width: 100%;
-    height: auto;
+h1{
+    float: right;
+    font-size: calc(1.200rem + 1.5vw);
 }
 
 body{
@@ -18,30 +12,22 @@ body{
 }
 .container-fluid, .col.b-header{
     background-color:rgb(102, 139, 131);
-    
-    
-}
 
-.main, .podval, .nav1, .form, .table{
+}
+.col {
     background-color:rgb(122, 151, 145);
-
-
 }
 
-.shapka, .podval
-{
-    background-color:rgb(102, 139, 131); 
+.b-nav ul li{
+    list-style-type: none;
+}
+.b-nav ul{
     
+    padding-right: 20px;
 }
 
-header{
-    margin-bottom: 10px;
-}
-
-
-#nav1{
+.b-nav{
     clear:both;
-
 }
 
 #nav1 ul li{
@@ -78,20 +64,18 @@ tr.nprime {
 th {
     background: rgb(157, 161, 182);
 }
-.col {
-    background-color:rgb(122, 151, 145);
-}
 
-@media screen and (min-device-width: 800px) {
+
+@media screen and (min-device-width: 768px) {
 
     #nav1{
         text-align: center;
     }
-
-    .main, .row{
-        max-width: 960px;
+    .h-h1{
+        float: none;
+        
     }
-    .col, .shapka, .podval, .nav1, .form, .table, .f{
+    .b-header, .row, .col, .shapka, .podval, .nav1, .form, .table, .f{
         max-width: 960px;
 
     }
@@ -103,18 +87,6 @@ th {
             list-style-type: disc;
             margin-bottom:0vw;
         }
-        header, footer{
-        }
-        #img1{
-            width:200px;
-            height:200px;
-        }
-        #img2{
-            width:549px;
-            height:164px;
-        }
-        #tb{
-            
-        }
+
     }
   
