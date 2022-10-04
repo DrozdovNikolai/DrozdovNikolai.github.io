@@ -30,10 +30,7 @@ body{
     clear:both;
 }
 
-#nav1 ul li{
-    
-    list-style-type: none;
-}
+
 nav a{
     text-decoration: none;
 }
@@ -75,7 +72,7 @@ th {
         float: none;
         
     }
-    .b-header, .row, .col, .shapka, .podval, .nav1, .form, .table, .f{
+    .b-header, .row, .col, .shapka, .f{
         max-width: 960px;
 
     }
