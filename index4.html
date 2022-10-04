@@ -3,27 +3,30 @@
 <html lang="ru">
 
 <head>
-  <link rel="icon" type="image/x-icon" href="favicon.svg"> 
+  <link rel="icon" type="image/x-icon" href="favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Задание 4</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style4.css">
 </head>
 
 <body>
-    <header class="container-fluid pb-2 ">  
-  <div class="b-header mx-auto pb-5 mb-5 mb-md-0" >
-      <img src="catbird.jpg" class="img-fluid logo pr-5 " alt="логотип" >
+  <header class="container-fluid pb-2 ">
+    <div class="b-header mx-auto pb-5 mb-5 mb-md-0">
+      <img src="catbird.jpg" class="img-fluid logo pr-5 " alt="логотип">
       <h1 class="h-h1">Дроздов Николай</h1>
-  </div>
-    
+    </div>
+
   </header>
-<!--<div class="col py-3 mx-auto">-->
+  <!--<div class="col py-3 mx-auto">-->
   <nav class="col b-nav col-12 my-2 mx-auto pb-3 py-3 text-md-center">
     <ul>
-      <li class="ul-li d-md-inline-block mx-5"><a href="#maptest" >тест map'а</a></li>
-      <li class="ul-li d-md-inline-block mx-5" ><a href="#tb">таблица</a></li>
+      <li class="ul-li d-md-inline-block mx-5"><a href="#maptest">тест map'а</a></li>
+      <li class="ul-li d-md-inline-block mx-5"><a href="#tb">таблица</a></li>
       <li class="ul-li d-md-inline-block mx-5"><a href="#footer">подвал</a></li>
     </ul>
   </nav>
@@ -56,9 +59,9 @@
       <li>
         <p><a href="https://example.com">ссылка 13</a></p>
       </li>
-      <li><a href="https://example.com"> <img src="Test.png" alt="Пример"  class="img-fluid" id="img1"> </a></li>
-      <li><img src="rect_circle.png" alt="Прямоугольник и круг" usemap="#Navigation"
-          id="maptest" class="img-fluid"></li>
+      <li><a href="https://example.com"> <img src="Test.png" alt="Пример" class="img-fluid" id="img1"> </a></li>
+      <li><img src="rect_circle.png" alt="Прямоугольник и круг" usemap="#Navigation" id="maptest" class="img-fluid">
+      </li>
       <li><a href="about">ссылка 16</a></li>
       <li><a href="about/1">ссылка 17</a></li>
       <li><a href="../na_uroven_vishe"> ссылка 18 </a></li>
@@ -72,95 +75,96 @@
     </map>
   </div>
   <div class="row mx-auto">
-  <div class="col col-12 order-2 order-md-1 mx-auto mb-2 py-1">
-    <table id="tb">
-        <h3>Таблица</h3>
-      <tbody>
-        <tr>
-          <th>колонка 1</th>
-          <th>колонка 2</th>
-          <th>колонка 3</th>
-        </tr>
-        <tr class="nprime">
-          <td>11</td>
-          <td>12</td>
-          <td>12</td>
-        </tr>
-        <tr class="prime">
-          <td colspan="3">21 22 23</td>
-        </tr>
-        <tr class="nprime">
-          <td>31</td>
-          <td colspan="2">32 33</td>
-        </tr>
-        <tr class="prime">
-          <td colspan="2">41 42</td>
-          <td>43</td>
-        </tr>
-        <tr class="nprime">
-          <td>51</td>
-          <td>52</td>
-          <td>53</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="col col-12 order-2 order-md-1 mx-auto mb-2 py-1">
+      <h3>Таблица</h3>
+      <table id="tb">
 
-  <div class="col col-12 order-1 order-md-2 mx-auto mb-2 py-1">
-    <form action="/" method="POST">
-      <label>
-        Имя:<br>
-        <input name="field-name-1" id="name" placeholder="Введите ваше имя">
-      </label><br>
-      <label>
-        E-mail:<br>
-        <input name="field-email" type="email" id="email" placeholder="Введите вашу почту">
-      </label><br>
-      <label>
-        Дата рождения:<br>
-        <input name="field-date" value="2022-09-05" type="date">
-      </label><br>
-      Пол:<br>
-      <label><input type="radio" name="radio-group-1" value="male">
-        Мужской</label>
-      <label><input type="radio" name="radio-group-1" value="female">
-        Женский</label><br>
-      Количество конечностей:<br>
-      <label><input type="radio" name="radio-group-2" value="2">
-        2</label>
-      <label><input type="radio" name="radio-group-2" value="4">
-        4</label><br>
-      <label>
-        Сверх способности:
+        <tbody>
+          <tr>
+            <th>колонка 1</th>
+            <th>колонка 2</th>
+            <th>колонка 3</th>
+          </tr>
+          <tr class="nprime">
+            <td>11</td>
+            <td>12</td>
+            <td>12</td>
+          </tr>
+          <tr class="prime">
+            <td colspan="3">21 22 23</td>
+          </tr>
+          <tr class="nprime">
+            <td>31</td>
+            <td colspan="2">32 33</td>
+          </tr>
+          <tr class="prime">
+            <td colspan="2">41 42</td>
+            <td>43</td>
+          </tr>
+          <tr class="nprime">
+            <td>51</td>
+            <td>52</td>
+            <td>53</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col col-12 order-1 order-md-2 mx-auto mb-2 py-1">
+      <form action="/" method="POST">
+        <label>
+          Имя:<br>
+          <input name="field-name-1" id="name" placeholder="Введите ваше имя">
+        </label><br>
+        <label>
+          E-mail:<br>
+          <input name="field-email" type="email" id="email" placeholder="Введите вашу почту">
+        </label><br>
+        <label>
+          Дата рождения:<br>
+          <input name="field-date" value="2022-09-05" type="date">
+        </label><br>
+        Пол:<br>
+        <label><input type="radio" name="radio-group-1" value="male">
+          Мужской</label>
+        <label><input type="radio" name="radio-group-1" value="female">
+          Женский</label><br>
+        Количество конечностей:<br>
+        <label><input type="radio" name="radio-group-2" value="2">
+          2</label>
+        <label><input type="radio" name="radio-group-2" value="4">
+          4</label><br>
+        <label>
+          Сверх способности:
+          <br>
+          <select name="field-name-2[]" multiple="multiple">
+            <option value="god">бессмертие</option>
+            <option value="noclip">прохождение сквозь стены</option>
+            <option value="sv_gravity">левитация</option>
+          </select>
+        </label>
         <br>
-        <select name="field-name-2[]" multiple="multiple">
-          <option value="god">бессмертие</option>
-          <option value="noclip">прохождение сквозь стены</option>
-          <option value="sv_gravity">левитация</option>
-        </select>
-      </label>
-      <br>
-      <label>
-        Биография:<br>
-        <textarea name="field-name-3" id="bio"></textarea>
-      </label><br>
-      Чекбокс:<br>
-      <label><input type="checkbox" id="checkbox" name="check-1">
-        с контрактом ознакомлен (а) </label><br>
-      <input type="submit" value="Отправить">
-    </form>
+        <label>
+          Биография:<br>
+          <textarea name="field-name-3" id="bio"></textarea>
+        </label><br>
+        Чекбокс:<br>
+        <label><input type="checkbox" id="checkbox" name="check-1">
+          с контрактом ознакомлен (а) </label><br>
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
   </div>
-</div>
   <!--</div>-->
   <div class="container-fluid">
-  <footer class="f mx-auto" >
-    <div class="f-text">
-      (с) Дроздов Николай 25 группа, 1 подгруппа<br>
-      задание 4
-    </div>
-  
-  </footer>
-</div>
+    <footer class="f mx-auto">
+      <div class="f-text">
+        (с) Дроздов Николай 25 группа, 1 подгруппа<br>
+        задание 4
+      </div>
+
+    </footer>
+  </div>
 
 
 
