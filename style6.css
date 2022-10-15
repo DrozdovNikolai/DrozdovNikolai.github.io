@@ -1,0 +1,24 @@
+html,body {
+    background: rgb(30,30,30);
+    background: linear-gradient(120deg, rgba(30,30,30,1) 0%, rgba(20,20,20,1) 100%);
+    font-family: monospace;
+    font-size:20px;
+}
+h3{
+    color:white;
+    font-size: 20px;
+}
+#result{
+    color:white;
+}
+form{
+    color:white;
+    
+}
+.wrapper{
+    margin-top: 10vw;
+}
+
+.b-f{
+    margin: 5vw;
+}
