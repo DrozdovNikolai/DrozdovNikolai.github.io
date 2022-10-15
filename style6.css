@@ -15,7 +15,9 @@ form, span, #result{
 .wrapper{
     margin-top: 10vw;
 }
-
+.h{
+    padding-left: 0;
+}
 .b-f{
     margin: 5vw;
 }
