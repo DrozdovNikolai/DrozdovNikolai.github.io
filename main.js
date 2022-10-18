@@ -1,110 +1,24 @@
-function updatePrice(v) {
-  let s = document.getElementsByName("prodType");
-  let select = s[0];
-
-  let radioDiv = document.getElementById("prodOptions");
-  radioDiv.style.display = ((select.value === "1" || select.value === "3") ? "none" : "block");
-
-
-
-  let checkDiv = document.getElementById("checkboxes");
-  checkDiv.style.display = (select.value === "3" ? "block" : "none");
-  let price = 0;
-
-  let prices = getPrices();
-  let priceIndex = parseInt(select.value) - 1;
-  if (priceIndex >= 0) {
-    price = prices.prodTypes[priceIndex];
-  }
-
-  if (select.value === "2") {
-    let radios = document.getElementsByName("prodOptions");
-    radios.forEach(function (radio) {
-      if (radio.checked) {
-        let optionPrice = prices.prodOptions[radio.value];
-        if (optionPrice !== undefined) {
-          price += optionPrice;
-        }
-      }
-    });
-  }
-  if (select.value === "3") {
-    let checkboxes = document.getElementsByName("checkboxes");
-    checkboxes.forEach(function (checkboxes) {
-      if (checkboxes.checked) {
-        let checkboxPrice = prices.prodProperties[checkboxes.value];
-        if (checkboxPrice !== undefined) {
-          price += checkboxPrice;
-        }
-      }
-    });
-  }
-
-  let onlydigitnotzero = /^(?!(0))\d+$/;
-  let prodPrice = document.getElementById("result");
-  if (v.match(onlydigitnotzero) === null) {
-    prodPrice.innerHTML = "Число не введено или начинается с нуля";
-  }
-  else {
-
-    prodPrice.innerHTML = "<span> Итого: </span> <br>" + v * price + " рублей";
-  }
-
-}
-
-function getPrices() {
-  return {
-    prodTypes: [100, 200, 300],
-    prodOptions: {
-      option2: 5,
-      option3: 10
-    },
-    prodProperties: {
-      check1: 277,
-      check2: 133
-    }
-  };
-}
-
-
-
-
+//Произошла чудовищная ошибка и я случайно заменил файл задания 5, заданием 6, если посмотреть по коммитам, то будет все видно
 window.addEventListener("DOMContentLoaded", function (event) {
-  let radioDiv = document.getElementById("prodOptions");
-  radioDiv.style.display = "none";
+  console.log("DOM fully loaded and parsed");
+  function click1() {
+      let f1 = document.getElementById("field1").value;
+      let f2 = document.getElementById("field2").value;
+      let r = document.getElementById("result");
+      console.log(f1);
+      let onlydigitnotzero=/^(?!(0))\d+$/;
+      if(f1.match(onlydigitnotzero)===null || f2.match(onlydigitnotzero)===null)
+      {
+        alert("Введено не число или начинается с нуля");
+        r.innerHTML="Ошибка NaN";
 
-  let checkboxDiv = document.getElementById("checkboxes");
-  checkboxDiv.style.display = "none";
+      }
+      else
+      {
 
-  let v = document.getElementById("field");
-  v.addEventListener("input", function (event) {
-    updatePrice(v.value);
+        r.innerHTML = parseInt(f1) * parseInt(f2);
+      }
+    }
+    let b = document.getElementById("button1");
+    b.addEventListener("click", click1);
   });
-
-  let s = document.getElementsByName("prodType");
-  let select = s[0];
-  select.addEventListener("change", function (event) {
-    let target = event.target;
-    updatePrice(v.value);
-  });
-
-  let radios = document.getElementsByName("prodOptions");
-  radios.forEach(function (radio) {
-    radio.addEventListener("change", function (event) {
-      let r = event.target;
-      updatePrice(v.value);
-    });
-  });
-
-
-  let checkboxes = document.getElementsByName("checkboxes");
-  checkboxes.forEach(function (checkbox) {
-    checkbox.addEventListener("change", function (event) {
-      let c = event.target;
-      updatePrice(v.value);
-    });
-  });
-
-});
-
-
