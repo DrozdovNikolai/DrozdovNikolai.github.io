@@ -1,18 +1,19 @@
-html,body {
+html,
+body {
   background: linear-gradient(90deg, rgb(77 179 108) 0%, rgb(119 171 106) 100%);
-    font-family: monospace;
-    font-size:20px;
+  font-family: monospace;
+  font-size: 20px;
 }
 
 .b-slider-responsive {
-    width: 90%;
-    margin: 100px auto;
+  width: 90%;
+  margin: 100px auto;
 }
 
 .b-slider-responsive .slick-slide {
   margin: 0px 5px;
   border: 2px solid;
-  
+
   border-color: white;
 }
 
@@ -20,11 +21,12 @@ html,body {
   width: 100%;
 
 }
-.b-slider-responsive .slick-dots
-{
-bottom:auto;
+
+.b-slider-responsive .slick-dots {
+  bottom: auto;
 }
-.b-slider-responsive .slick-dots li button:before,.b-slider-responsive .slick-dots li.slick-active button:before
-{
-color: white;
+
+.b-slider-responsive .slick-dots li button:before,
+.b-slider-responsive .slick-dots li.slick-active button:before {
+  color: white;
 }
